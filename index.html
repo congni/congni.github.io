@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>葱泥的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="iOS开发者">
+<meta property="og:type" content="website">
+<meta property="og:title" content="葱泥的博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="葱泥的博客">
+<meta property="og:description" content="iOS开发者">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="葱泥的博客">
+<meta name="twitter:description" content="iOS开发者">
+  
+    <link rel="alternative" href="/atom.xml" title="葱泥的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/uploads/webIcon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://77fmre.com1.z0.glb.clouddn.com/avatar.jpeg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">葱泥</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">葱泥 · iOS开发者</p>
+		
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/archives">文章</a></li>
+				        
+							<li><a href="/categories/mobile">开发</a></li>
+				        
+							<li><a href="/openSource">开源</a></li>
+				        
+							<li><a href="/categories/life">随记</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="http://github.com/congni" title="github">github</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">葱泥</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://77fmre.com1.z0.glb.clouddn.com/avatar.jpeg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">葱泥</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">葱泥 · iOS开发者</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/archives">文章</a></li>
+		        
+					<li><a href="/categories/mobile">开发</a></li>
+		        
+					<li><a href="/openSource">开源</a></li>
+		        
+					<li><a href="/categories/life">随记</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="http://github.com/congni" title="github">github</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+  
+    <article id="post-iOS代码规范" class="article article-type-post" itemscope itemprop="blogPost">
+
+<div class="article-meta">
+<a href="/2016/10/08/iOS代码规范/" class="article-date">
+  	<time datetime="2016-10-08T06:11:21.000Z" itemprop="datePublished">2016-10-08</time>
+</a>
+</div>
+
+<div class="article-inner">
+
+<input type="hidden" class="isFancy" />
+
+
+<header class="article-header">
+
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/08/iOS代码规范/">iOS代码规范</a>
+    </h1>
+  
+
+</header>
+
+
+<div class="article-entry" itemprop="articleBody">
+
+
+<p>此文档为iOS开发过程中，所需要注意的代码规范，此规范曾应用于好居网iOS端代码。大家可以结合自己项目实际情况，来选择使用，这里提供的仅供参考，如发现问题，欢迎指正，谢谢！</p>
+<ul>
+<li>author: 葱泥</li>
+<li>time: 2016-10-08</li>
+</ul>
+<hr>
+<h2 id="代码编写规范"><a href="#代码编写规范" class="headerlink" title="代码编写规范"></a>代码编写规范</h2><ol>
+<li><p>指针“*”号的位置:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">NSString *value = @&quot;&quot;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>方法的声明和定义中，+或者- 和返回值之间要有一个空格:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// 类方法</div><div class="line">+ (void)test;</div><div class="line"></div><div class="line">// 实例方法</div><div class="line">- (NSString *)test;</div></pre></td></tr></table></figure>
+</li>
+<li><p>方法大括号和其他大括号(if/else/switch/while等.)总是在同一行语句打开(并且之间空一格),但在新行中关闭:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">- (void)viewDidLoad &#123;</div><div class="line">    [super viewDidLoad];</div><div class="line">    </div><div class="line">    switch (tag) &#123;</div><div class="line">        case: 1:</div><div class="line">        case: 2:</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>类名首字母大写，方法首字母小写，方法中的参数首字母小写，同时尽量让方法的命名读起来像一句话，能够传达出方法的意思，同时取值方法前不要加前缀“get”:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (id)initWithExpire:(BOOL)isExpire;</div><div class="line"></div><div class="line">self.apiManager = [[CNBaseApiManager alloc] init];</div></pre></td></tr></table></figure>
+</li>
+<li><p>变量名小写字母开头。常量(#define, enum, const等)以小写字母k开头，后续首字母大写:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">static NSString *kSecondHouseCellReferSecondHouseID = @&quot;kSecondHouseCellReferSecondHouseID&quot;;</div><div class="line"></div><div class="line">&gt; 注：命名尽量要准确表述是干什么的，不要怕名字长，意思一定要到位。禁止使用一切无意义的命名.</div></pre></td></tr></table></figure>
+</li>
+<li><p>对于一些特殊类型的变量，命名时要带上类型，如这里列举一些后缀命名:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">- 数组: xxxArray;</div><div class="line">- 可变数组: xxxMulArray;</div><div class="line">- 字典: xxxDictionary;</div><div class="line">- 可变字典: xxxMulDictionary;</div><div class="line">- 字符串: xxxString;</div><div class="line">- 可变字符串: xxxMulString;</div><div class="line">- 文本: xxxLabel;</div><div class="line">- 输入框: xxxTextfield;</div><div class="line">- 按钮: xxxButton;</div></pre></td></tr></table></figure>
+</li>
+<li><p>.h的空行规范:</p>
+</li>
+</ol>
+<ul>
+<li>文件说明与头文件包含(#import)之间空1行;</li>
+<li>头文件包含(#import)之间，如果需要分类区别，各类别之间空1行;</li>
+<li>头文件包含(#import)与@class之间空2行;</li>
+<li>头文件{}外，空1行书写属性，如果需要分类区别，各类别之间空1行;</li>
+<li>属性下面空1行开始写方法，方法之间空一行;</li>
+<li>方法完成后，空1行@end;<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">//</div><div class="line">//  AdverApiManager.h</div><div class="line">//  CNApiManagerDemo</div><div class="line">//</div><div class="line">//  Created by 葱泥 on 16/9/28.</div><div class="line">//  Copyright © 2016年 葱泥. All rights reserved.</div><div class="line">//</div><div class="line"></div><div class="line">#import &quot;CNBaseApiManager.h&quot;</div><div class="line"></div><div class="line"></div><div class="line">static NSString *kApiManagerNameAdver = @&quot;kApiManagerNameAdver&quot;;</div><div class="line"></div><div class="line"></div><div class="line">@interface AdverApiManager : CNBaseApiManager&lt;ApiParamProtocol&gt; &#123;</div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line">/**</div><div class="line"> 数据容器</div><div class="line"> */</div><div class="line">@property (nonatomic, strong) NSMutableArray *mulArray;</div><div class="line"></div><div class="line">/**</div><div class="line"> 数据请求</div><div class="line"> */</div><div class="line">- (void)request;</div><div class="line"></div><div class="line">@end</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol>
+<li>m的空行规范:</li>
+</ol>
+<ul>
+<li>文件说明与头文件包含(#import)之间空1行;</li>
+<li>头文件包含(#import)之间，如果需要分类区别，各类别之间空1行;</li>
+<li>@synthesize与方法之间空2行;</li>
+<li>方法与方法之间空1行;</li>
+</ul>
+<ol>
+<li>方法里面的空行:</li>
+</ol>
+<ul>
+<li>变量声明后需要空1行，如果需要分类区别，各类别之间空1行;</li>
+<li>条件、循环，选择语句，整个语句结束，需要空1行;</li>
+<li>各功能快之间空1行;</li>
+<li>最后一个括弧之前不空行;</li>
+<li>注释与代码之间不空行;</li>
+<li>#pragmamark 与方法之间不空行;<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#pragma mark 获取数据成功回调</div><div class="line">- (void)apiLoadSuccess &#123;</div><div class="line">    if (self.isSupportNextPage) &#123;</div><div class="line">        NSArray *arry = [self.rawData valueForKey:@&quot;&quot;];</div><div class="line">        [self.mulArray addObjectsFromArray:arry];</div><div class="line">        </div><div class="line">        if (self.mulArray.count == [[self.rawData valueForKey:@&quot;&quot;] integerValue]) &#123;</div><div class="line">            if ([self.apiCallBackDelegate respondsToSelector:@selector(lastPageLoaded)]) &#123;</div><div class="line">                [self.apiCallBackDelegate lastPageLoaded];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol>
+<li><p>当使用enum时，推荐使用新的固定基本类型规格，因为它有更强的类型检查和代码补全。现在SDK有一个宏NS_ENUM()来帮助和鼓励你使用固定的基本类型:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> 类型</div><div class="line"></div><div class="line"> - RWTLeftMenuTopItemMain:  居中</div><div class="line"> - RWTLeftMenuTopItemShows: 显示</div><div class="line"> */</div><div class="line">typedef NS_ENUM(NSInteger, RWTLeftMenuTopItemType) &#123;</div><div class="line">    RWTLeftMenuTopItemMain,</div><div class="line">    RWTLeftMenuTopItemShows,</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Objective-C使用YES和NO。nil解析成NO，所以没有必要在条件语句比较。不要拿某样东西直接与YES比较:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">if (self.arrowImage) &#123;</div><div class="line">    // 判断对象存不存在，不需要对比nil</div><div class="line">&#125;</div><div class="line"></div><div class="line">BOOL isShow = YES;</div><div class="line"></div><div class="line">if (isShow) &#123;</div><div class="line">    // 判断是不是YES，不需要对比YES</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>协议（委托）命名。与类命名相同，此外需添加“Delegate”后缀:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">@protocol CNNetworkErrorDelegate &lt;NSObject&gt;</div><div class="line"></div><div class="line">/**</div><div class="line"> 根据错误 code, 获取问题描述</div><div class="line"></div><div class="line"> @param statueCode 错误码</div><div class="line"></div><div class="line"> @return 问题描述</div><div class="line"> */</div><div class="line">- (NSString *)networkErrorDescription:(NSInteger)statueCode;</div><div class="line"></div><div class="line">/**</div><div class="line"> 数据处理</div><div class="line"></div><div class="line"> @param responseObject   api 返回收</div><div class="line"> @param sessionDataTask  NSURLSessionDataTask对象</div><div class="line"> @param error           错误</div><div class="line"></div><div class="line"> @return ResultModel</div><div class="line"> */</div><div class="line">- (ResultModel *)networkHandleRecevieData:(id)responseObject requestOperation:(NSURLSessionDataTask *)sessionDataTask error: (NSError *)error;</div><div class="line"></div><div class="line">/**</div><div class="line"> 获取无网络的ResultModel数据</div><div class="line"></div><div class="line"> @return ResultModel</div><div class="line"> */</div><div class="line">- (ResultModel *)noNetwork;</div><div class="line"></div><div class="line">@end</div></pre></td></tr></table></figure>
+</li>
+<li><p>图片命名:</p>
+</li>
+</ol>
+<ul>
+<li>使用英文，首字母大写，之后每个单词首字母都大写;</li>
+<li>添加模块名作为前缀，避免冲突，用_隔离;</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LoginImage_icon_loginIcon@2x.png</div></pre></td></tr></table></figure>
+<ol>
+<li><p>操作符前后都要加空格:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">NSInteger a = 10;</div><div class="line">NSInteger b = 10;</div><div class="line"></div><div class="line">if (a == b) &#123;</div><div class="line">    // TODO</div><div class="line">&#125;</div><div class="line"></div><div class="line">NSInteger c = a + b;</div></pre></td></tr></table></figure>
+</li>
+<li><p>语句嵌套层次不得超过5层:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">NSInteger a = 10;</div><div class="line"></div><div class="line">if (a == 1) &#123;</div><div class="line">    </div><div class="line">&#125; else if (a == 2) &#123;</div><div class="line">    </div><div class="line">&#125; else if (a == 3) &#123;</div><div class="line">    </div><div class="line">&#125; else if (a == 4) &#123;</div><div class="line">    </div><div class="line">&#125; else if (a == 5) &#123;</div><div class="line">    // 最多到这一层</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>每个实现文件建议在800行以内，不能超过1000行，viewController.m的代码行数控制在300行内，最多不能超过500行，超过之后应考虑通过抽象类对代码进行重构；</p>
+</li>
+<li>及时删除无用的代码，确定不使用的代码应该删除;</li>
+<li>如使用frame设置位置时，需要使用相对坐标，不可使用绝对坐标;</li>
+<li>当if语句的判断条件复杂时，需要用注释说明判断内容，注: 当遇到这种if最后一个}为左右一行或者后面是}的时候，不需要空行:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">NSInteger a = 10;</div><div class="line"></div><div class="line">if (a == 1) &#123;</div><div class="line">    // 注释</div><div class="line">&#125; else if (a == 2) &#123;</div><div class="line">    // 注释</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="代码编写规范-1"><a href="#代码编写规范-1" class="headerlink" title="代码编写规范"></a>代码编写规范</h2><ol>
+<li>项目中严禁使用Group编组，所有的文件归类，都必须使用文件夹；</li>
+<li>在项目中模块功能开发部分代码，应该新建文件夹放在Class文件夹下；(注: Class文件夹为业务模块)；</li>
+<li>资源文件必须放在DataSource文件夹下；包括但不仅限于plist、字体、数据库等；</li>
+<li>所有的图片必须放在Image文件夹下的对应文件夹(按模块分类建立相应文件夹)；</li>
+<li>所有的数据库表及Record都必须放在SQLiteVersion文件夹下，并且后缀名上必须加上Table或者Record，如有需要建立模块文件夹；</li>
+<li>所有继承CNBaseApiManager的网络请求文件，必须放在ApiManager文件夹下，并且后缀名上必须加上ApiManager，apiName的命名必须已kApiManagerNameKey开头，如有需要建立模块文件夹;</li>
+<li>所有公用组件必须放在CustomControl文件夹下；</li>
+<li>当继承第三方库时，如果第三方库支持cocoapods，则使用cocoapods来集成，集成的时候一定要带上tag。如果不支持cocoapods，在将源文件放到OtherExtendClass文件夹下；</li>
+<li>所有的数据处理文件，全部放到DataCenter文件夹下，并且已DataCenter为后缀命名;</li>
+<li>所有的Model模型，全部放到Model文件夹下，并且已Model为后缀命名;</li>
+<li>在工程中删除文件后，在找到对应的文件或者文件夹删除;</li>
+<li>确保工程文件夹里面，没有没用的文件或者文件夹;</li>
+<li>系统类的功能配置代码，放到SystemSetting文件里面;</li>
+<li>公用功能性的代码，放到SystemComment文件里面;</li>
+<li>图标、闪屏图片，统一放到Images.xcassets里面;</li>
+<li>所有通知名称放到StaticKeyProfileManager里面，方法名以Notification结尾；</li>
+<li>所有存储类的key值放到StaticKeyProfileManager里面，方法名以Cache结尾;</li>
+<li>所有好的组件，将会升级到私有库中;</li>
+</ol>
+<h2 id="注释规范"><a href="#注释规范" class="headerlink" title="注释规范"></a>注释规范</h2><ol>
+<li>文件都包含文件头，要说明文件名、作者、创建时间、变更记录(修改xcode后，在创建文件的时候，自动创建后大致为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/***</div><div class="line">  @fileName TestVC.h</div><div class="line">  @abstract 对于此文件功能性描述，方便别人知道此文件主要实现的功能</div><div class="line">  @author   Create by 葱泥 on 16/10/08</div><div class="line">  @revise   葱泥 on 16/10/08</div><div class="line">  @version  1.0 on 16/10/08</div><div class="line">***/</div><div class="line"></div><div class="line">说明:</div><div class="line">@abstract: 文件创建出来后，创建者要在这里注释这个文件的功能</div><div class="line">@revise: 文件被修改后，修改者要在这里将自己的名字写在这里，同时修改时间</div><div class="line">@version: 每次修改后，version版本递增;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>注： @abstract必须要有的，做为注释；@revise/@version依团队情况而定，不强制；</p>
+</blockquote>
+<ol>
+<li>所有对外开的方法，全部都要添加注释(xcode7用VVDocment注释；xcode8用自带的注释)</li>
+<li>所有对外的属性，全部要添加注释(xcode7用VVDocment注释；xcode8用自带的注释)</li>
+<li>在.m里面，所有的方法都要使用#pragma mark进行注释，方便查找:</li>
+<li><p>在函数分组和protocol/delegate实现中使用#pragma mark -来分类方法，要遵循以下一般结构:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#pragma mark - LifeCycle</div><div class="line">- (instancetype)init&#123;&#125;;</div><div class="line">- (void)viewDidLoad &#123;&#125;;</div><div class="line"></div><div class="line">#pragma mark - Private Method</div><div class="line">- (void)privateMethod</div><div class="line"></div><div class="line">#pragma mark - Public Method</div><div class="line">- (void)publicMethod</div><div class="line"></div><div class="line">#pragma mark - UITableViewDataSourceDelegate</div><div class="line"></div><div class="line">#pragma mark - UITableViewDelegate</div><div class="line"></div><div class="line">#pragma mark - Setter/Getter</div><div class="line"></div><div class="line">#pragma mark - IBActions</div><div class="line">- (IBAction)test</div></pre></td></tr></table></figure>
+</li>
+<li><p>在项目中的某个地方的逻辑可能比较复杂或者是核心思想的代码，这种地方应加上一些注释作为标注，也利于自己维护代码，利于之后别人接手代码。使用“//”注释。</p>
+</li>
+<li>在项目中使用TODO来管理代码的待办事项，使用// TODO、// FIXME来修饰注释，具体使用TODO插件来完成。其格式为// TODO  @开发人员名称  需要代办的事项。开发人员在看到有@自己的时候，一定先修改这里。代办事项标注，只能标注人删除，被被标注人禁止删除。</li>
+</ol>
+<h2 id="插件使用规范-仅针对xcode7"><a href="#插件使用规范-仅针对xcode7" class="headerlink" title="插件使用规范(仅针对xcode7)"></a>插件使用规范(仅针对xcode7)</h2><ol>
+<li>TODO插件。被@人，无权删除TODO标记，只有标注人才能确认删除；</li>
+<li>XAlign，= 对齐，宏定义群组对齐和属性群组对齐；</li>
+<li>VVDocumenter注释插件。其设置应为；<br><img src="http://77fmre.com1.z0.glb.clouddn.com/C90BD233-3AF5-4809-A271-43B85749B8D7.png" alt="image"></li>
+<li>其余插件推荐: cocoapods、DerivedData Exterminator、FuzzyAutocomplete.</li>
+</ol>
+<h2 id="Git使用规范"><a href="#Git使用规范" class="headerlink" title="Git使用规范"></a>Git使用规范</h2><ol>
+<li>每次迭代开发，新建迭代版本号的分支，所有本期迭代内的任务，全部提交到此分支上；</li>
+<li>每次版本发布上线完成之后，创建tag，tag为当前版本，并且把迭代分支合并到developer上；</li>
+<li>禁止将不能运行的、运行崩溃的等有问题的代码上传到git远程服务器上；</li>
+</ol>
+
+
+</div>
+
+<div class="article-info article-info-index">
+
+
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/资源/">资源</a></li></ul>
+	</div>
+
+
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/mobile/">mobile</a>
+	</div>
+
+
+
+<div class="clearfix"></div>
+</div>
+
+</div>
+
+
+</article>
+
+
+
+
+
+  
+    <article id="post-关注的博客" class="article article-type-post" itemscope itemprop="blogPost">
+
+<div class="article-meta">
+<a href="/2016/07/16/关注的博客/" class="article-date">
+  	<time datetime="2016-07-16T02:49:19.000Z" itemprop="datePublished">2016-07-16</time>
+</a>
+</div>
+
+<div class="article-inner">
+
+<input type="hidden" class="isFancy" />
+
+
+<header class="article-header">
+
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/16/关注的博客/">关注的博客</a>
+    </h1>
+  
+
+</header>
+
+
+<div class="article-entry" itemprop="articleBody">
+
+
+<p>技术从来不缺大牛和好的技术团队，同样，技术，需要很好的分享精神。这里推荐一些大牛和技术团队的blog。(仅供参考)</p>
+<h2 id="Glow技术团队博客"><a href="#Glow技术团队博客" class="headerlink" title="Glow技术团队博客"></a>Glow技术团队博客</h2><p>webSite: <a href="http://tech.glowing.com/cn/" target="_blank" rel="external">http://tech.glowing.com/cn/</a></p>
+<h2 id="美团"><a href="#美团" class="headerlink" title="美团"></a>美团</h2><p>webSite: <a href="http://tech.meituan.com/" target="_blank" rel="external">http://tech.meituan.com/</a></p>
+<h2 id="腾讯"><a href="#腾讯" class="headerlink" title="腾讯"></a>腾讯</h2><p>webSite: <a href="http://isux.tencent.com/" target="_blank" rel="external">http://isux.tencent.com/</a></p>
+<h2 id="唱吧"><a href="#唱吧" class="headerlink" title="唱吧"></a>唱吧</h2><p>webSite: <a href="http://www.iwangke.me/" target="_blank" rel="external">http://www.iwangke.me/</a></p>
+<h2 id="王巍"><a href="#王巍" class="headerlink" title="王巍"></a>王巍</h2><p>webSite: <a href="https://onevcat.com/#blog" target="_blank" rel="external">https://onevcat.com/#blog</a></p>
+<h2 id="田伟宇"><a href="#田伟宇" class="headerlink" title="田伟宇"></a>田伟宇</h2><p>webSite: <a href="http://casatwy.com/" target="_blank" rel="external">http://casatwy.com/</a></p>
+<h2 id="Bang"><a href="#Bang" class="headerlink" title="Bang"></a>Bang</h2><p>webSite: <a href="http://blog.cnbang.net/archives/" target="_blank" rel="external">http://blog.cnbang.net/archives/</a></p>
+<h1 id="唐巧"><a href="#唐巧" class="headerlink" title="唐巧"></a>唐巧</h1><p>webSite: <a href="http://www.devtang.com/" target="_blank" rel="external">http://www.devtang.com/</a></p>
+<h2 id="标哥"><a href="#标哥" class="headerlink" title="标哥"></a>标哥</h2><p>webSite: <a href="http://www.hybblog.com/" target="_blank" rel="external">http://www.hybblog.com/</a></p>
+<h2 id="里脊串的开发随记"><a href="#里脊串的开发随记" class="headerlink" title="里脊串的开发随记"></a>里脊串的开发随记</h2><p>webSite: <a href="http://adad184.com/" target="_blank" rel="external">http://adad184.com/</a></p>
+
+
+</div>
+
+<div class="article-info article-info-index">
+
+
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/资源/">资源</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随记/">随记</a></li></ul>
+	</div>
+
+
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/life/">life</a><a class="article-category-link" href="/categories/life/mobile/">mobile</a>
+	</div>
+
+
+
+<div class="clearfix"></div>
+</div>
+
+</div>
+
+
+</article>
+
+
+
+
+
+  
+    <article id="post-xcode插件" class="article article-type-post" itemscope itemprop="blogPost">
+
+<div class="article-meta">
+<a href="/2016/07/15/xcode插件/" class="article-date">
+  	<time datetime="2016-07-15T06:11:21.000Z" itemprop="datePublished">2016-07-15</time>
+</a>
+</div>
+
+<div class="article-inner">
+
+<input type="hidden" class="isFancy" />
+
+
+<header class="article-header">
+
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/15/xcode插件/">xcode插件</a>
+    </h1>
+  
+
+</header>
+
+
+<div class="article-entry" itemprop="articleBody">
+
+
+<p>插件其实是帮助有效开发，节省开发时间，提高开发效率的，好的插件，也确实能起到这方便的作用，下面我介绍几个我个人日常开发经常用到的插件:</p>
+<h2 id="VVDocumenter-规范注释生成器"><a href="#VVDocumenter-规范注释生成器" class="headerlink" title="VVDocumenter 规范注释生成器"></a>VVDocumenter 规范注释生成器</h2><p>好的代码，离不开注释！注释能够提高代码的易读性、规范性等，帮助开发者快速上手。同时，好的注释，也是有效的编码习惯，所以建议大家去习惯注释，为了帮助他人也是为了自己。VVDocumenter是大神之作，能够有效帮助你生成好的注释，推荐给大家；<br>github: <a href="https://github.com/onevcat/VVDocumenter-Xcode" target="_blank" rel="external">https://github.com/onevcat/VVDocumenter-Xcode</a></p>
+<h2 id="XToDo-注释辅助插件"><a href="#XToDo-注释辅助插件" class="headerlink" title="XToDo 注释辅助插件"></a>XToDo 注释辅助插件</h2><p>大家在做迭代开发任务的时候，特别是团队协作的时候，经常会用到类似于TODO、FIXME等注释，这些注释可以帮助开发者了解代码的问题，那么怎样去找这些注释呢？XTODO就是干着事情的，为开发者提供快捷键去注释，同时可以快速以列表形式列举出来。<br>github: <a href="https://github.com/trawor/XToDo" target="_blank" rel="external">https://github.com/trawor/XToDo</a></p>
+<h2 id="Alcatraz-Xcode插件管理工具"><a href="#Alcatraz-Xcode插件管理工具" class="headerlink" title="Alcatraz Xcode插件管理工具"></a>Alcatraz Xcode插件管理工具</h2><p>帮助开发者管理插件的，可以在通过此工具，一键安装插件和移除插件，十分方便。<br>github: <a href="http://alcatraz.io" target="_blank" rel="external">http://alcatraz.io</a></p>
+<h2 id="AMAppExportToIPA-一键到处IPA文件"><a href="#AMAppExportToIPA-一键到处IPA文件" class="headerlink" title="AMAppExportToIPA 一键到处IPA文件"></a>AMAppExportToIPA 一键到处IPA文件</h2><p>在提交到处ipa文件的时候，你是不是要做很多繁琐步骤？这个插件，就是帮你干掉哪些繁琐的步骤的，直接一键到处IPA文件，很方便。<br>github: <a href="https://github.com/MellongLau/AMAppExportToIPA-Xcode-Plugin" target="_blank" rel="external">https://github.com/MellongLau/AMAppExportToIPA-Xcode-Plugin</a></p>
+<h2 id="XcodePluginUpgradeCompatible-解决插件不加载问题的插件"><a href="#XcodePluginUpgradeCompatible-解决插件不加载问题的插件" class="headerlink" title="XcodePluginUpgradeCompatible 解决插件不加载问题的插件"></a>XcodePluginUpgradeCompatible 解决插件不加载问题的插件</h2><p>大家在xcode升级后，会发现之前安装的那么多插件都不加载了，然后你又要耗费时间去重新搞他，安装了这个插件后，你就再也不用担心此问题了！<br>github: <a href="https://github.com/LFL2018/XcodePluginUpgrade-LFL.git" target="_blank" rel="external">https://github.com/LFL2018/XcodePluginUpgrade-LFL.git</a></p>
+<h2 id="CocoaPods-cocoapods安装更新插件"><a href="#CocoaPods-cocoapods安装更新插件" class="headerlink" title="CocoaPods cocoapods安装更新插件"></a>CocoaPods cocoapods安装更新插件</h2><p>cocoapods第三方库管理工具，相信大家都会去用的，但是每次更新都要去命令行，烦不烦啊(有的时候还忘记了命令行，尴尬死了)，这个插件就是帮你搞定这个的，让你在使用cocoapods的时候，全程不用命令行，只需要鼠标点点就OK了。<br>github: <a href="https://github.com/kattrali/cocoapods-xcode-plugin.git" target="_blank" rel="external">https://github.com/kattrali/cocoapods-xcode-plugin.git</a></p>
+<h2 id="其他一些插件"><a href="#其他一些插件" class="headerlink" title="其他一些插件"></a>其他一些插件</h2><ol>
+<li><a href="https://github.com/kattrali/deriveddata-exterminator" target="_blank" rel="external">DerivedData</a> 清理DerivedData数据的插件</li>
+<li><a href="https://github.com/qfish/XAlign.git" target="_blank" rel="external">XAlign</a> 代码对齐插件</li>
+</ol>
+<p><strong>还有一些其他比较好的插件，大家依据自己的开发，可以选择安装使用。</strong></p>
+
+
+</div>
+
+<div class="article-info article-info-index">
+
+
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/插件/">插件</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/资源/">资源</a></li></ul>
+	</div>
+
+
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/mobile/">mobile</a>
+	</div>
+
+
+
+<div class="clearfix"></div>
+</div>
+
+</div>
+
+
+</article>
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 葱泥
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?f450542abf589db85ba8b725f4f93fd1";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  </div>
+</body>
+</html>
